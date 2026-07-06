@@ -124,7 +124,7 @@ INSERT INTO Users (user_id, full_name, email, role, phone_number) VALUES
 (3, 'Sajjad Rahman', 'sajjad@mail.com', 'Ticket Manager', '+8801733333333'),
 (4, 'Jannat Ara', 'jannat@mail.com', 'Football Fan', NULL),
 (5, 'Fatima Khan', 'fatima.khan@mail.com', 'Football Fan', '+8801744444444'),
-
+(6, 'Karim Ahmed', 'karim.ahmed@mail.com', 'Ticket Manager', '+8801755555555'),
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO MATCHES
 -- =========================================================================
