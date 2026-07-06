@@ -138,7 +138,12 @@ INSERT INTO Matches (match_id, fixture, tournament_category, base_ticket_price, 
 (102, 'Man City vs Liverpool', 'Premier League', 120.00, 'Selling Fast'),
 (103, 'Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
 (104, 'AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
-(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available');
+(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available'),
+(106, 'Manchester United vs Arsenal', 'Premier League', 110.00, 'Available'),
+(107, 'Liverpool vs Chelsea', 'Premier League', 140.00, 'Selling Fast'),
+(108, 'Paris Saint-Germain vs Lyon', 'Ligue 1', 100.00, 'Available'),
+(109, 'Borussia Dortmund vs Bayern Munich', 'Bundesliga', 125.00, 'Sold Out'),
+(110, 'Atletico Madrid vs Real Sociedad', 'La Liga', 95.00, 'Available');
 
 -- =========================================================================
 -- DATA SEEDING: INSERT SAMPLE DATA INTO BOOKINGS
