@@ -12,7 +12,9 @@ DROP TABLE IF EXISTS Users;
 
 -- =========================================================================
 -- 1. CREATE USERS TABLE
--- =========================================================================
+-- =========================================================================   -- Write your constraint to make 'user_id' the Primary Key
+    -- Write your constraint to ensure 'email' values are never duplicated
+    -- Write your check constraint to restrict 'role' to specific allowed strings
 
 CREATE TABLE Users (
     user_id        INTEGER,
@@ -34,27 +36,12 @@ CREATE TABLE Users (
 
 
 
-
-
-
-
-
-
-CREATE TABLE Users (
-    user_id TYPE,
-    full_name TYPE,
-    email TYPE,
-    role TYPE,
-    phone_number TYPE,
-    
-    -- Write your constraint to make 'user_id' the Primary Key
-    -- Write your constraint to ensure 'email' values are never duplicated
-    -- Write your check constraint to restrict 'role' to specific allowed strings
-);
-
 -- =========================================================================
 -- 2. CREATE MATCHES TABLE
 -- =========================================================================
+    -- Write your constraint to make 'match_id' the Primary Key
+    -- Write your check constraint to prevent negative ticket prices
+    -- Write your check constraint to restrict 'match_status' values
 CREATE TABLE Matches (
     match_id             INTEGER,
     fixture              VARCHAR(150) NOT NULL,
@@ -90,17 +77,6 @@ CREATE TABLE Matches (
 
 
 
-CREATE TABLE Matches (
-    match_id TYPE,
-    fixture TYPE,
-    tournament_category TYPE,
-    base_ticket_price TYPE,
-    match_status TYPE,
-    
-    -- Write your constraint to make 'match_id' the Primary Key
-    -- Write your check constraint to prevent negative ticket prices
-    -- Write your check constraint to restrict 'match_status' values
-);
 
 -- =========================================================================
 -- 3. CREATE BOOKINGS TABLE
