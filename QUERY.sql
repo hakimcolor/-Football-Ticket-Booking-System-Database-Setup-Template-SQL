@@ -56,6 +56,41 @@ CREATE TABLE Users (
 -- 2. CREATE MATCHES TABLE
 -- =========================================================================
 CREATE TABLE Matches (
+    match_id             INTEGER,
+    fixture              VARCHAR(150) NOT NULL,
+    tournament_category  VARCHAR(50)  NOT NULL,
+    base_ticket_price    NUMERIC(10,2) NOT NULL,
+    match_status         VARCHAR(20)  NOT NULL,
+
+    CONSTRAINT pk_match_id PRIMARY KEY (match_id),
+
+    CONSTRAINT check_price
+        CHECK (base_ticket_price >= 0),
+
+    CONSTRAINT check_status
+        CHECK (
+            match_status IN ('Available', 'Selling Fast', 'Sold Out', 'Postponed')
+        )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE Matches (
     match_id TYPE,
     fixture TYPE,
     tournament_category TYPE,
