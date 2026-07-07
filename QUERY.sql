@@ -34,8 +34,6 @@ CREATE TABLE Users (
 );
 
 
-
-
 -- =========================================================================
 -- 2. CREATE MATCHES TABLE
 -- =========================================================================
@@ -59,23 +57,6 @@ CREATE TABLE Matches (
             match_status IN ('Available', 'Selling Fast', 'Sold Out', 'Postponed')
         )
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 -- =========================================================================
@@ -188,4 +169,10 @@ SELECT b.booking_id,
 FROM Bookings b
 INNER JOIN Users u ON b.user_id = u.user_id
 INNER JOIN Matches m ON b.match_id = m.match_id;
+
 -- Query 5: Display a comprehensive list of all users and their booking IDs, ensuring that fans who have never bought a ticket are still listed.
+SELECT u.user_id,
+       u.full_name,
+       b.booking_id
+FROM Users u
+LEFT JOIN Bookings b ON u.user_id = b.user_id;
