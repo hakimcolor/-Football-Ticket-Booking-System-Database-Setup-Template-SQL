@@ -108,7 +108,8 @@ INSERT INTO Users (user_id, full_name, email, role, phone_number) VALUES
 (6, 'Karim Ahmed', 'karim.ahmed@mail.com', 'Ticket Manager', '+8801755555555'),
 (7, 'Nadia Islam', 'nadia.islam@mail.com', 'Football Fan', NULL),
 (8, 'Rashed Hossain', 'rashed@mail.com', 'Football Fan', '+8801766666666'),
-(9, 'Sumaiya Begum', 'sumaiya@mail.com', 'Ticket Manager', '+8801777777777');
+(9, 'Sumaiya Begum', 'sumaiya@mail.com', 'Ticket Manager', '+8801777777777'),
+(10, 'Hasan choW', 'hasan@mail.com', 'Football Fan', '+8801788888888');
 
 
 -- =========================================================================
