@@ -173,3 +173,4 @@ FROM Users
 WHERE full_name LIKE 'Tanvir%'
    OR full_name ILIKE '%Haque%';
 
+-- Query 3: Retrieve all booking records where the payment status is missing (NULL), replacing the empty result with 'Action Required'.
