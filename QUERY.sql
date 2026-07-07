@@ -179,3 +179,5 @@ SELECT booking_id,
     COALESCE(payment_status, 'Action Required') AS payment_status
 FROM bookings
 WHERE payment_status IS NULL;
+
+-- Query 4: Retrieve match booking details along with the User's full name and the scheduled Match fixture teams.
