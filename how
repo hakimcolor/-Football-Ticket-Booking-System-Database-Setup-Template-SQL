@@ -1,0 +1,8 @@
+[33mcommit dc49f6271936733da5509890036611a5dab15b7e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: hakimcolor <hakimcolor777@gmail.com>
+Date:   Thu Sep 24 23:27:39 2026 +0600
+
+     retriev the top 2 most exp
+
+ QUERY.sql | 5 [31m-----[m
+ 1 file changed, 5 deletions(-)
